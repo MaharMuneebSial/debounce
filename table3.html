@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        thead {
+            background-color: #333;
+            color: white;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        th,
+        td {
+            padding: 12px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        div {
+            margin-top: 20px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 8px 16px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div>
+        <h1>Add new row</h1>
+    </div>
+
+    <div>
+        <input type="text"  id="name">
+        <input type="text"  id="age">
+        <button id="btn" onclick="add()">Add </button>
+        
+    </div>
+
+
+    <table id="mytable">
+        <tr>
+            <th>name</th>
+            <th>age</th>
+            <th>action</th>
+        </tr>
+        <tr>
+            <td>ali</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td>nomi</td>
+            <td>17</td>
+        </tr>
+    </table>
+
+
+    
+
+<script src="table3.js"></script>
+
+
+</body>
+</html>
